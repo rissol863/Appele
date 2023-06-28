@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .logo{
+ display: flex;
+ align-items: center;
+}
+
+img{
+    margin-right: 15px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list{
+    display: flex;
+    align-items: center;
+}
+
+li{
+    margin-right: 15px;
+    list-style-type: none;
+}
+
+.fbtn{
+    color: black;
+    text-decoration: none ;
+    border: 2px solid black; 
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+
+.container{
+    margin: 0 auto;
+    width: 1200px;
+    max-width: 100%;
+}
+
+.b{
+    width: 25px;
+    height: 5px;
+    background-color: black;
+    margin-top: 5px;
+}
+
+.byrger{
+    margin-right: 15px;
+    display: none;
+}
+
+.liga{
+    display: flex;
+    align-items: center;
+}
+
+
+.ul-mobile{
+    display: none;
+    position: absolute;
+    top:50px;
+    background-color: blue;
+    padding: 30px 40px;
+    margin-right: 90px;
+    font-size: 25px;
+    color: #fff;
+    border-radius: 15px;
+}
+
+body{
+    background: #E8F1F3;
+}
+
+
+@media (max-width:670px){
+
+    .byrger{
+        display: block;
+    }
+
+    .list{
+        display: none;
+    }
+}
+
+
+.tbtn{
+    color: #fff;
+    background: #2E312F;
+    text-decoration: none ;
+    height: 56px;
+    width: 384px;
+    border-radius: 10px;
+    padding: 16px 24px 16px 24px;
+    margin-left: 101px;
+}
+
+p{
+    font-size: 20px;
+    color: #878787;
+    margin-bottom: 48px;
+    margin-left: 101px;
+}
+
+h1{
+    font-size: 54px;
+    margin-left: 101px;
+}
+
+
+.vraper{
+    display: flex;
+    background: #D8E5E8;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: 62px;
+}
+
+.Kartinka{
+    margin-left: 79px;
+}
+
+
+.two_liga{
+    display: flex;
+    justify-content: center;
+    background: #FFFFFF;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 40px;
+}
+
+.thbtn{
+    margin-top: 47px;
+    margin-bottom: 47px;
+}
+
+.auto{
+   background: white;
+   margin-top: 100px;
+   text-decoration: none;
+   color: #2E312F;
+   padding: 8px 16px;
+   border-radius: 35px;
+}
+
+.btn{
+    display: flex;
+   justify-content: center;
+}
+
+.two_btn{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+
+
+
+.three{
+    margin-top: 72px;
+    margin-bottom: 128px;
+}
+
+
+
+@media(max-width:1243px){
+    .two_btn{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .first-ph,.second-ph{
+        border: solid 2px #E8F1F3;
+        text-align: center;
+    }
+}
+
+@media(max-width: 918px){
+    .Kartinka{
+        max-width: 70%;
+        height: 100%;
+    }
+
+    .vraper{
+        height: 500px;
+    }
+
+    
+}
+
+@media(max-width:808px){
+    .thbtn{
+        max-width: 100%;
+    }
+}
+
+
+
+@media(max-width: 750px){
+    .vraper{
+        display: block;
+        text-align: center;
+        height: 700px;
+    }
+    .Kartinka{
+        margin: 0;
+    }
+
+    h1,p{
+        margin-left: 0;
+    }
+
+    .tbtn{
+        margin-left: 0;
+    }
+
+
+}
+
+
+
+@media(max-width:570px){
+
+    .Kartinka{
+        height: 415px;
+    }
+
+}
+
+@media(max-width:505px){
+
+    h1{
+        font-size: 47px;
+    }
+}
+
+@media(max-width:480px){
+    .Kartinka{
+        height: 459px;
+        max-height: 100%;
+    }
+
+    h1{
+        font-size: 7vw;
+        margin-left: 0px;
+    }
+
+    .rec{
+        max-width: 120%;
+    }
+}
+
+@media(max-width: 420px){
+    h1{
+      font-size: 7vw;  
+      margin-left: 0px;
+    }
+
+    p{
+        margin-left: 0;
+    }
+
+    .tbtn{
+       width: 70px;
+       padding: 8px 8px 8px 8px;
+    }
+}
+
+
+
+
+
+</style>
+<body>
+    <header>
+        
+            <div class="container">
+                <nav>
+            <div class="logo">
+                <img src="Vector.png" alt="">
+            <h2>MacBro</h2>
+            </div>
+            
+            <ul class="list">
+                <li>Mac</li>
+                <li>iPhone</li>
+                <li>iPad</li>
+                <li>Watch</li>
+                <li>AirPods</li>
+                <li>Trade In</li>
+            </ul>
+        
+            <div class="liga">
+                <div onclick="A()" class="byrger">
+                    <div class="b"></div>
+                    <div class="b"></div>
+                    <div class="b"></div>
+
+                </div>
+                <ul class="ul-mobile">
+                    <li>Mac</li>
+                    <li>iPhone</li>
+                    <li>iPad</li>
+                    <li>Watch</li>
+                    <li>AirPods</li>
+                    <li>Trade In</li>
+                </ul>
+            
+                <a class="fbtn" href="">Buyurtma Bering</a>
+            </div>
+            
+
+        </nav>
+    </div>
+    </header>
+
+    <main class="main">
+        <section class="first-section">
+        <div class="container">
+            <div class="vraper">
+            <div class="container-2">
+                <h1>Chegaralarsiz <br> Tanlov Qiling</h1>
+        <p>Eng Qimmat bilan hamkorlikni biz orqali amalga oshiring. <br>
+            Apple sizga eng so’nggilarini taqdim etadi</p>
+            <a class="tbtn" href="">Keng Assortiment (-25% chegirma)</a>
+            </div>
+            <div class="container-3">
+                <img class="Kartinka" src="Aphone.png" alt="">
+            </div>
+          </div>
+          <div class="two_liga">
+            <img class="thbtn" src="Features.png" alt="">
+          </div>
+        </div>
+    </section>
+    <section class="second">
+        <div class="btn">
+        <a class="auto" href="">So’nggi Mahsulotlar</a>
+    </div>
+    <section class="three">
+        <div class="two_btn">
+            <div class="first-ph">
+            <img class="rec" src="Rectangle 1.png" alt="">
+            <img class="rec" src="Rectangle 1 (1).png" alt="">
+            </div>
+            <div class="second-ph">
+            <img class="rec" src="Rectangle 1 (2).png" alt="">
+            <img class="rec" src="Rectangle 1 (3).png" alt="">
+        </div>
+        </div>
+       </section>
+    </section>
+    </main>
+    <script src="app.js"></script>
+
+</body>
+</html>
